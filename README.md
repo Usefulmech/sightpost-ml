@@ -15,6 +15,8 @@ The service does not store images, identities, names, locations, family contacts
 
 ## API contract
 
+**Production URL:** `https://usefulmech-sightpost-ml.hf.space`
+
 ### `GET /health`
 
 Returns service/model readiness.
@@ -107,7 +109,11 @@ http://127.0.0.1:8001/docs
 Example request:
 
 ```powershell
+# Local
 curl.exe -X POST "http://127.0.0.1:8001/extract-embedding" -F "file=@C:\path\to\face.jpg"
+
+# Production
+curl.exe -X POST "https://usefulmech-sightpost-ml.hf.space/extract-embedding" -F "file=@C:\path\to\face.jpg"
 ```
 
 

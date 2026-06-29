@@ -1,4 +1,4 @@
-﻿# Sightpost Backend Schema Contract
+# Sightpost Backend Schema Contract
 
 This file defines the database/API contract the backend should use with the Sightpost ML service.
 
@@ -6,10 +6,12 @@ The ML service only returns face embeddings. The backend owns all identity recor
 
 ## Core ML Contract
 
+**Production Base URL:** `https://usefulmech-sightpost-ml.hf.space`
+
 Endpoint:
 
 ```http
-POST /extract-embedding
+POST https://usefulmech-sightpost-ml.hf.space/extract-embedding
 Content-Type: multipart/form-data
 field: file
 ```
