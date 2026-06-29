@@ -1,4 +1,13 @@
-﻿# Sightpost ML Service
+---
+title: Sightpost ML Service
+emoji: 👁️
+colorFrom: blue
+colorTo: indigo
+sdk: docker
+app_port: 7860
+pinned: false
+---
+# Sightpost ML Service
 
 Isolated FastAPI service for Sightpost face embedding extraction. It is used by both police public-sighting flows and medical unidentified-patient intake flows.
 
